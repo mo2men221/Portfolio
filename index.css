@@ -1,0 +1,398 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #201E43;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+#letter {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #508C9B;
+}
+
+.navigation > a {
+    font-size: 1rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    text-decoration: none;
+    color: #EEEEEE;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+
+.navigation > a:hover {
+    background-color: #EEEEEE;
+    color: #201E43;
+}
+
+section {
+    padding: 60px 0; 
+}
+
+#home {
+    background-color: #EEEEEE;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 900;
+    color: #201E43;
+    margin-bottom: 40px;
+}
+
+#home > h3 {
+    font-size: 1.5rem;
+    font-family: "Poppins", system-ui;
+    color: #134B70;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-family: "Poppins", system-ui;
+    color: #201E43;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px; 
+}
+
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 20px 5%;
+}
+
+.projects-items {
+    max-width: 500px;
+    background-color: #EEEEEE;
+    height: 500px;
+    text-align: center;
+}
+
+.image > img {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.info > h5 {
+    font-size: 1.5rem;
+    font-family: "Poppins", system-ui;
+    color: #134B70;
+}
+
+.info > p {
+    font-size: 1.5rem;
+    font-family: "Poppins", system-ui;
+    margin-bottom: 30px;
+}
+
+.info > a {
+    text-decoration: none;
+    background-color: #201E43;
+    color: #EEEEEE;
+    padding: 10px;
+    font-size: 1rem;
+}
+#about {
+    width: 100%;
+    background-color: #EEEEEE;
+    padding: 80px 5%; 
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    margin: 0 20px;
+}
+
+.about-text > p {
+    font-size: 1.4rem;
+    font-family: "Poppins", system-ui;
+    text-align: center;
+}
+
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image > img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 50%;
+    border: 5px solid #201E43; 
+}
+
+
+footer {
+    background-color: #201E43;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+footer > p {
+    font-size: 1rem;
+    font-family: "Poppins", system-ui;
+    text-decoration: none;
+    color: #EEEEEE;
+    margin-left: 20px;
+}
+
+.navigation2 > a {
+    font-size: 1.2rem;
+    font-family: "Poppins", system-ui;
+    text-decoration: none;
+    color: #EEEEEE;
+    margin-left: 20px;
+}
+@media(max-width:890px) {
+    header {
+        padding: 10px 50px;
+    }
+    .logo {
+        font-size: 1.2rem;
+    }
+    
+    #letter {
+        font-size: 1.5rem;
+    }
+    
+    .navigation > a {
+        font-size: 0.7rem;
+        margin-left: 15px;
+    }
+    
+    section {
+        padding: 40px 0; 
+    }
+    #home {
+        padding-top: 100px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+    
+    #home > h3 {
+        font-size: 1rem;
+    }
+    
+    .title {
+        font-size: 1rem;
+        margin-top: 7.5px;
+    }
+    .projects-container {
+        padding: 10px 5%;
+        flex-wrap: wrap;
+    }
+    
+    .projects-items {
+        max-width: 400px;
+        height: 400px;
+    }
+    
+    .image > img {
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    
+    .info > h5 {
+        font-size: 1rem;
+    }
+    
+    .info > p {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+    .info > a {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+    #about {
+        width: 100%;
+        background-color: #EEEEEE;
+        padding: 40px 3%; 
+    }
+    
+    .about-container {
+        flex-wrap: wrap;
+    }
+    
+    .about-text {
+        max-width: 350px;
+        margin: 0 10px;
+    }
+    
+    .about-text > p {
+        font-size: 1rem;
+    }
+    
+    
+    .about-image > img {
+        max-width: 200px;
+    }
+    
+    
+    footer {
+        padding: 10px 50px;
+    }
+    footer > p {
+        font-size: 0.7rem;
+        margin-left: 10px;
+    }
+    
+    .navigation2 > a {
+        font-size: 0.7rem;
+        margin-left: 5px;
+    }
+    
+}
+@media(max-width:465px) {
+    header {
+        padding: 5px 25px;
+    }
+    .logo {
+        font-size: 1rem;
+    }
+    
+    #letter {
+        font-size: 1.2rem;
+    }
+    
+    .navigation > a {
+        font-size: 0.5rem;
+        margin-left: 10px;
+    }
+    
+    section {
+        padding: 20px 0; 
+    }
+    #home {
+        padding-top: 50px;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    #home > h3 {
+        font-size: 0.7rem;
+    }
+    
+    .title {
+        font-size: 0.7rem;
+        margin-top: 5px;
+    }
+    .projects-container {
+        padding: 5px 5%;
+        flex-wrap: wrap;
+    }
+    
+    .projects-items {
+        max-width: 350px;
+        height: 350px;
+    }
+    
+    .image > img {
+        width: 100%;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    
+    .info > h5 {
+        font-size: 0.7rem;
+    }
+    
+    .info > p {
+        font-size: 0.7rem;
+        margin-bottom: 10px;
+    }
+    .info > a {
+        padding: 5px;
+        font-size: 0.7rem;
+    }
+    #about {
+        width: 100%;
+        background-color: #EEEEEE;
+        padding: 20px 3%; 
+    }
+    
+    .about-container {
+        flex-wrap: wrap;
+    }
+    
+    .about-text {
+        max-width: 400px;
+        margin: 0 10px;
+    }
+    
+    .about-text > p {
+        font-size: 0.7rem;
+    }
+    
+    
+    .about-image > img {
+        max-width: 200px;
+    }
+    
+    
+    footer {
+        padding: 10px 50px;
+    }
+    footer > p {
+        font-size: 0.5rem;
+        margin-left: 10px;
+    }
+    
+    .navigation2 > a {
+        font-size: 0.5rem;
+        margin-left: 5px;
+    }
+    
+}
